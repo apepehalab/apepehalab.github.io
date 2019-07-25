@@ -1,81 +1,99 @@
-<!DOCTYPE html>
-<!-- Let's go hardcore and make sites using only Windows Notepad! -->
-<html lang="en"><head>
-<title>Apepeha Lab. — официальный сайт</title>
-<meta name="description" content="Apepeha Lab. — официальный сайт"/>
+<!DOCTYPE html><html lang="en"><head>
+<title>Apepeha Game Lab. — официальный сайт</title>
+<meta name="description" content="Apepeha Game Laboratory — команда инди-разработчиков игр из Санкт-Петербурга"/>
 <meta name="keywords" content="апепеха,apepeha,tales,of,pangaea,panamario,панамарио,дырылых,дырылыхать,бабахоло,бабахолово,ослино,супеорслино"/>
-<link rel="icon" href="img/favicon.ico"/>
-<meta name="yandex-verification" content="c44f83ec027c8b6c"/>
-<meta name="google-site-verification" content="vzfbchXJ9H-cy8KhjvNr2JzxtVRkA_4fGh3Ru9Wk59M"/>
+<link rel="icon" href="https://cdn.discordapp.com/attachments/511290825657810955/603866140887875594/favicon.ico"/>
 <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="author" content="Avicus Delacroix (Discord: Avicus#1172)"/><style>
-header, section, footer, aside, nav, main, article, figure {display: block;}
-@font-face {font-family: apepehaFont;src: url(apepehaFont.ttf);}
-* {box-sizing: border-box;} body {margin: 0;
-    background-color: rgb(32, 34, 37); /* [1] Site background*/
-font-family: apepehaFont;}
-ul.aviNavi {list-style-type: none;margin: 0.5%;padding: 0;overflow: hidden;
-    background-color: rgb(47 , 49, 54); /* [2] AviNavi bar and Footer */
-position: -webkit-sticky;position: sticky; top: 0.5%;border-radius: 7px;}
-ul.aviNavi li {float: left;} ul.aviNavi li a {display: block;
-    color: #e4e5e7; /* [3] AviNavi bar and Footer text color */
-text-align: center;padding: 14px 16px;text-decoration: none;}
-ul.aviNavi li a:hover:not(.active) {border-radius: 7px;
-    background-color: #474a52;} /* [5] AviNavi hover color */
-ul.aviNavi li a.active {border-radius: 7px;
-    background-color: rgb(54 , 57, 63);}  /* [4] "Active" Header color */
-ul.aviNavi li.right {float: right;}
-    a:link, a:visited {color: #e4e5e7;} /* [6] Text links colors */
-    a:hover, a:active {color: #c8cad0;} /* [7] Text active links colors */
-    footer {background-color: rgb(47 , 49, 54); /* [2] AviNavi bar and Footer */
-    color: #e4e5e7; /* [3] AviNavi bar and Footer text color */
-padding: 14px 16px; text-align: center;text-decoration: none;border-radius: 7px;margin: 0.5%;}
-    section {background-color: #474a52;
-    color: #e4e5e7; /* [8] Content Background */
-border-radius: 7px;padding: 14px;float: left;width: 66.3%;margin-bottom: 0.5%;}
-    aside {background-color: #474a52;
-    color: #e4e5e7; /* [8] Content Background */
-;border-radius: 7px;padding: 14px;width:33.2%;float: right;position: absolute;top: 0;right: 0;}
-.aviBody {overflow: auto;margin: 0.5%;position: relative;} .responsive {padding: 5px 5px;float: left;width: 33.33%;} div.gallery {border: 1px solid #c8cad0;} div.gallery img {width: 100%;height: auto;} div.desc {padding: 10px;text-align: center;} 
-@media screen and (max-width: 600px) {ul.aviNavi li.right, ul.aviNavi li {float: none;} ul.aviNavi li a {padding: 10px 10px} footer {padding: 10px 10px} section {float: none; width: 100%;} aside {float: none; width: 100%; position: static;}}
+  header,section,footer,aside,nav,main,article,figure {display:block}
+  @font-face {font-family:apepehaFont;src:url(apepeha-font.ttf)}
+  * {box-sizing:border-box;} body {margin:0;background-color:#e1e1ea;font-family:apepehaFont}
+  ul.aviNavi {list-style-type:none;margin:0.5%;padding:0;overflow:hidden;background-color:#3d3d5c;top:0.5%;border-radius:7px}
+  ul.aviNavi li {float:left;} ul.aviNavi li a {display:block;color:#f0f0f5;text-align:center;padding:14px 16px;text-decoration:none}
+  ul.aviNavi li a:hover:not(.active) {border-radius:7px;background-color:#008080}
+  ul.aviNavi li a.active {border-radius:7px;background-color:#006666}
+  ul.aviNavi li.right {float:right}
+  a:link, a:visited {color:#f0f0f5;} a:hover, a:active {color:#00c2c2}
+  footer {background-color:#3d3d5c;color:#f0f0f5;padding:14px 16px;text-align:center;text-decoration:none;border-radius:7px;margin:0.5%}
+  section {background-color:#52527a;color:#f0f0f5;border-radius:7px;padding:14px;float:left;width:66.3%;margin-bottom:0.5%}
+  aside {background-color:#52527a;color:#f0f0f5;border-radius:7px;padding:14px;width:33.2%;float:right;position:absolute;top:0;right:0}
+  .aviBody {overflow:auto;margin:0.5%;position:relative}
+  @media screen and (max-width:600px) {ul.aviNavi li.right, ul.aviNavi li {float:none} ul.aviNavi li a {padding:10px 10px} footer {padding:10px 10px} section {float:none;width:100%;} aside {float:none;width:100%;position:static}}
 </style></head><body>
 <nav><ul class="aviNavi">
   <li id="aviButton1"><a class="active"><header><b>Apepeha Lab.</b></header></a></li>
-  <li id="aviButton2" onclick="about()"><a>О нас</a></li>
-  <li id="aviButton3" onclick="games()"><a>Наши игры</a></li>
+  <li id="aviButton2" onclick="about()"><a>О компании</a></li>
+  <li id="aviButton3" onclick="games()"><a>Tales of Pangaea</a></li>
   <li id="aviButton4" onclick="donate()"><a>Поддержите нас</a></li>
   <li id="aviButton5" onclick="contact()"><a>Контакты</a></li>
   <li id="aviButton6" class="right" onclick="sstad()"><a>Не нажимай!</a></li>
 </ul></nav>
 <div class="aviBody">
 <section id="tab1" style="display:block">
-  <img src="img/avilogo.jpg" style="width:50%;height:auto">
+  <img src="apepeha-logo.png" style="width:100%">
   <h1>О компании Apepeha Lab.</h1>
-  <p>Мы — <b>Apepeha Lab.</b>, группа начинающих разработчиков игр из Санкт-Петербурга.<br><br>
-  Мы поставили перед собой цель написать игру в жанре MMORPG с захватывающим сюжетом и красивым миром, которая будет портирована на большинство известных платформ: Windows, macOS, Linux, iOS, Android, Raspberry PI. Работа ведётся полным ходом в настоящий момент, однако, в основном по ночам, так как наш проект — наша собственная инициатива и никем не спонсируется, так что днём мы работаем.<br><br>
-  Для достижения своих целей мы выбрали движок Unity 2019: Во-первых из-за его возможностей реализовать очень крутую графику, а ещё в связи с тем, что он бесплатный для разработчиков, кто не зарабатывает много (или вообще не зарабатывает) на своём проекте. Поэтому, мы можем заниматься разработкой сколько хотим, пока не выпустили ни один из наших продуктов в коммерцию.<br><br>
-  Кстати, MMORPG — не единственная наша цель, мы планируем выпускать игры в разных жанрах: фентези/RPG, аркады, градостроительство... Плюс, вы всегда сможете связаться с нами и предложить свои идеи, и мы обязательно примем их во внимание.<br><br>
-  Плюс, напоследок, мы будем благодарны, если вы поддержите наш проект — это мотивирует нас работать больше и усерднее, и вскоре мы сможем порадовать вас чем-то грандиозным.<br><br></p>
+  <p>
+    Мы — Apepeha Game Lab., группа инди-разработчиков игр из Санкт-Петербурга, Россия.
+    <br><br>
+    Проще говоря, мы — группа друзей, объединённая одной общей идеей: написать качественную и захватывающую 
+    игру в жанре онлайн-РПГ с открытым и красивым миром, свободой действия, увлекательной сюжетной линией. 
+    Впрочем, писать игры мы только учимся, но не за горами тот день, когда наши навыки будут достаточны для 
+    написания полноценного проекта, способного конкурировать с такими играми, как The Elder Scrolls Online 
+    или World of Warcraft.
+    <br><br>
+    Для достижения своих целей мы выбрали игровой движок Unity 2019. Во-первых, это связано с его 
+    бесплатностью для разработчиков, кто зарабатывает меньше $100k в год 
+    (или вообще не зарабатывает — как мы пока). Во-вторых, это отличные возможности самого движка. 
+    В третьих же, это отличная производительность и кросплатформенность, что будет нам на руку — ведь мы 
+    хотим сделать нашу игру доступной на Windows/Linux/macOS и иметь настройки графики, поддерживаемые как 
+    и слабыми компьютерами, так и современными.
+    <br><br>
+    Кстати, РПГ — не единственная наша цель. Получив достаточно опыта в создании игр/моделей/программирования, 
+    мы планируем запустить ещё проекты в разных жанрах. Кроме того, мы всегда доступны для связи через 
+    тикет-систему в нашем дискорде и готовы выслушать все ваши советы и предложения.
+    <br><br>
+    Мы так же будем благодарны, если вы поддержите наш проект. На стадии разработки это очень важно для нас. 
+    Это позволит нам, например, докупить оборудование для разработки, мотивирует работать лучше и осознавать, 
+    что есть те, кому интересны наши идеи и хотелось бы поскорее увидеть конечный продукт. Кроме того, 
+    все пожертвовавшие хотя бы 10 рублей нашей компании, будут отображены на нашем сайте.
+    <br><br>
+    <a href="https://www.tinkoff.ru/sl/7om9j60P6iP">Пожертвовать на создание игры Tales of Pangaea</a>
+    <br><br>
+    Следите за обновлениями!
+  </p>
 </section>
 <section id="tab2" style="display:none">
-  <h1>Наши игры</h1>
-  <h3>Panamario</h3>
-  <img src="img/panamario006.png" width=50%>
-  <p>Наша первая и пока что единственная игра, задуманая в жанре RPG. Создана больше с целью изучить движок Unity и его механики, и выкладывается только с целью ознакомления с проектом. В игре много багов и недоработок, мы о них знаем, сообщать о них не нужно, ведь игра тестовая.<br><br>
-  Главный герой игры — один из наших разработчиков, Панамарь (Никита Пономарёв). Его задача, оказавшись в рандомной локации, бегать и взаимодействовать с объектами и НПС: брать и сдавать квесты, убивать мобов, лутать их и собирать объекты на карте.<br><br>
-  Реализовано пока что не всё, но мы над этим работаем.</p>
-  <p>v0.06 <a href="https://yadi.sk/d/tdGgIxojUsxCJQ">Скачать</a></p>
+  <h1>Tales of Pangaea</h1>
+  <p>Tales of Pangaea (Сказания Пангеи) — наш основной на текущий момент проект, задуманный в жанре онлайн-РПГ.</p>
+  <img src="apepeha-demo.png" style="width:100%;border-radius:7px">
+  <p>
+    В игре будет 6 рас, которые мы пока не будем называть, каждой расе на момент создания будет доступен 
+    только один уникальный класс. Достигнув определённого уровня развития, можно будет отправиться в путешествие 
+    в зону обитания другой расы, где, завоевав их доверие, можно будет изучить второй класс и впоследствии 
+    переключаться между этими классами. О классах и расах будет рассказано позже.
+    <br><br>
+    Основная зона игровых событий — материк Пангея (Pangaea), в переводе с греческого это означает "всеземля". 
+    Такое название предложил Альфред Вегенер для именования материка, существовавшего на Земле до того, как 
+    материки были поделены движением тектонических плит. Такое же название, "всеземля", мы решили использовать 
+    для единого материка в нашем проекте. Возможно, это название будет поменяно в процессе разработки.
+    <br><br>
+    Информация об основном сюжете игры на данный момент оглашаться не будет, всему своё время. Игра находится 
+    а стадии разработки, и как только выйдет рабочий прототип, он будет предоставлен на сайте.
+    <br><br>
+    Следите за обновлениями!
+    <br><br>
+    <a href="https://www.tinkoff.ru/sl/7om9j60P6iP">Пожертвовать на создание игры Tales of Pangaea</a>
+  </p>
 </section>
 <section id="tab3" style="display:none">
   <h1>Поддержите нас!</h1>
   <p>Мы — начинающая команда разработчиков, а поэтому нам очень важна наша поддержка.<br>
   <br>Вы можете поддержать нас финансово. Это позволит нам приобрести достойную технику для разработки и мотивирует на создание качественных продуктов.<br>
   <br>Нампример, куратор проекта использует компьютер со следующими характеристиками:<br><ul>
-  <li>Intel Celeron N3060 1.6GHz</li><li>Intel HD Graphics</li><li>4GB DDR3 SDRAM</li><li>500GB HDD</li><li>Windows 10</li></ul><br>
+  <li>Intel Celeron N3060 1.6GHz</li><li>Intel HD Graphics</li><li>4GB DDR3 SDRAM</li><li>500GB HDD</li><li>Windows 10</li></ul>
   <br>Сами понимаете, как долго приходится ждать компиляции продуктов в Unity.<br>
   <br>Мы не настаиваем на финансовой помощи, но если Вы захотите помочь, можете перейти по ссылке и пожертвовать нам любую сумму.<br>
-  <br><a href="https://paypal.me/avicus">Пожертвовать через PayPal&trade;</a>
-  <br><a href="https://money.yandex.ru/to/410014841308287">Пожертвовать через Яндекс.Деньги</a><br>
+  <br><a href="https://www.tinkoff.ru/sl/7om9j60P6iP">Пожертвовать на создание игры Tales of Pangaea</a>
   <br>Bce пожертвования нам будут отображены на нашем сайте!</p>
 </section>
 <section id="tab4" style="display:none">
@@ -83,25 +101,19 @@ border-radius: 7px;padding: 14px;float: left;width: 66.3%;margin-bottom: 0.5%;}
   <p>Самый простой способ с нами связаться — написать нам на наш канал в дискорде: <a href="https://discord.gg/FRQS4uX">discord.gg/FRQS4uX</a>.<br>Там Вы можете создать тикет и написать нам с вопросом или предложением.</p>
   <h3>Наша команда</h3><h4>Исполнительный директор:</h4><p>Авикус Делакруа — <i>обращайтесь по любому вопросу</i></p>
   <h4>Программисты:</h4><p>Ефим Михайленко — <i>глава отдела разработки</i><br>Никита Пономарёв<br>Зератул Белых</p>
-  <h4>3D-дизайнеры:</h4><p>Павел Метёлкин — <i>глава отдела 3D-моделирования</i></p>
+  <h4>3D-дизайнеры:</h4><p>Павел Метёлкин — <i>глава отдела 3D-моделирования</i><br>Андрей Игнатовский</p>
   <h4>Художники:</h4><p>Екатерина Тихонова</p>
   <h4>Сценаристы:</h4><p>Авикус Делакруа<br>Дарья Тишанинова</p>
-  <h4>Бездельники:</h4><p>Анастасия Ткаченко<br>Евгений Никулин<br>Ольга Антипова</p>
 </section>
 <aside>
-    <h3>Текущие версии игр:</h3>
-    <p><b>Tales of Pangaea</b> v0.1.11</p>
-    <p><b>Panamario</b> v0.7.56</p>
 <h3>Новости:</h3>
-<p>24.06.2019 — Tales of Pangaea v0.1.11 is released</p>
-<p>23.06.2019 — Panamario v0.7.55 is released
-<p>05.06.2019 — Panamario v0.6 is released</p>
-<p>02.06.2019 — Panamario v0.5 is released</p>
-<p>01.06.2019 — Panamario v0.4 is released</p>
-<p>29.05.2019 — Panamario v0.3 is released</p>
-<p>13.06.2019 — Tales of Pangaea is initialized</p>
-<p>20.05.2019 — Panamario v0.2 is released</p>
-<p>17.05.2019 — Panamario v0.1.0 is released</p>
+  <p>
+    В настоящее время полностью переписывается сайт (да, вы уже наверняка заметили смену меню и 
+    цветовой гаммы), разрабатывается внутриигровой интерфейс для нашего проекта, идёт реализация игровых боёвок 
+    и инвентаря. Моделлеры вовсю крафтят животных и растительность, всё новое вы увидите очень скоро!
+  </p>
+<h3><a href="https://github.com/apepehalab/top/blob/master/version-history.md">Наши релизы</a></h3>
+<p>Релизы нашей тестовой игры Panamario перенесены на гитхаб, где вы можете ознакомиться с текущими наработками.</p>
 </aside>
 </div>
 <footer>&copy; 2019 Apepeha Lab., Санкт-Петербург, Россия</footer>
