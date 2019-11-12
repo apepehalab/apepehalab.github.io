@@ -5,7 +5,7 @@
 </head>
 <body>
     <div id="app">
-        <button v-if="counter >= 101" @click="counter++">You clicked me {{counter}} times.</button>
+        <button @click="counter++">You clicked me {{counter}} times.</button>
         <p v-if="counter >= 10">Come on man, that's too many, stop it!</p>
         <p v-if="counter >= 20">You piss me off, stop clicking!</p>
         <p v-if="counter >= 30">I give up, you are fucking clicker maniac.</p>
