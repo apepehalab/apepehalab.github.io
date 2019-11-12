@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="counter++">You clicked me {{counter}} times.</button>
+        <p v-if="counter >= 10">Come on man, that's too many, stop it!</p>
+        <p v-if="counter >= 20">You piss me off, stop clicking!</p>
+        <p v-if="counter >= 30">I give up, you are fucking clicker maniac.</p>
+        <p v-if="counter >= 40">U still here?</p>
+        <p v-if="counter >= 50">Ok fuck you click it 100 times and get a reward!</p>
+        <p v-if="counter >= 100">You sick bastard, you know it?</p>
+        <img v-if="counter >= 100" src="download.jpg">
+        <p v-if="counter >= 100">This is you.</p>
+    </div>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    counter: 0,
+    message: ''
+  }
+})
+</script>
+</body>
